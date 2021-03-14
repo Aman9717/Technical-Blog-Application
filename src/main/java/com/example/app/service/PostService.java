@@ -37,7 +37,7 @@ public class PostService {
         POSTS.add(post4);
     }*/
 
-    private final String url = "jdbc:postgresql://localhost:5432/technicalblog";
+    private final String url = "jdbc:postgresql://localhost:5432/technicalapp";
     private final String username = "postgres";
     private final int password = 8520;
 
@@ -50,7 +50,7 @@ public class PostService {
            // STEP 1 - Connect to the database
            Connection connection  = connect();
 
-           // STEP - Get/Create the statement
+           // STEP - Get/Create the statement **In GET we create a statement and in POST we prepare a statement
            Statement statement = connection.createStatement();
 
            //STEP 3 - Execute the SELECT query
